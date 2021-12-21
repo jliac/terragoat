@@ -148,9 +148,9 @@ resource "aws_subnet" "web_subnet" {
 }
 
 resource "aws_subnet" "web_subnet2" {
-  vpc_id                  = aws_vpc.web_vpc.id
-  cidr_block              = "172.16.11.0/24"
-  availability_zone       = var.availability_zone2
+  vpc_id            = aws_vpc.web_vpc.id
+  cidr_block        = "172.16.11.0/24"
+  availability_zone = var.availability_zone2
 
   tags = {
     Name                 = "${local.resource_prefix.value}-subnet2"
