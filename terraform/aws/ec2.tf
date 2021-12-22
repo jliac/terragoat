@@ -1,5 +1,5 @@
 resource "aws_instance" "web_host" {
-  # ec2 have plain text secrets in user data
+  # ec2 have plain text secrets in user data by JLLOOOOOOOO
   ami           = "${var.ami}"
   instance_type = "t2.nano"
 
@@ -19,11 +19,11 @@ echo "<h1>Deployed via Terraform</h1>" | sudo tee /var/www/html/index.html
 EOF
   tags = {
     Name                 = "${local.resource_prefix.value}-ec2"
-    git_commit           = "d68d2897add9bc2203a5ed0632a5cdd8ff8cefb0"
+    git_commit           = "87861a1a9d9da274a6af370f1edc5b3a66d97a42"
     git_file             = "terraform/aws/ec2.tf"
-    git_last_modified_at = "2020-06-16 14:46:24"
-    git_last_modified_by = "nimrodkor@gmail.com"
-    git_modifiers        = "nimrodkor"
+    git_last_modified_at = "2021-12-22 00:38:10"
+    git_last_modified_by = "91766267+palogitjl@users.noreply.github.com"
+    git_modifiers        = "91766267+palogitjl/nimrodkor"
     git_org              = "palogitjl"
     git_repo             = "terragoat"
     yor_trace            = "cff9836a-83cb-4449-80fb-708d70c3d82f"
@@ -49,16 +49,16 @@ resource "aws_ebs_volume" "web_host_storage" {
 }
 
 resource "aws_ebs_snapshot" "example_snapshot" {
-  # ebs snapshot without encryption
+  # ebs snapshot without encryption JLL
   volume_id   = "${aws_ebs_volume.web_host_storage.id}"
   description = "${local.resource_prefix.value}-ebs-snapshot"
   tags = {
     Name                 = "${local.resource_prefix.value}-ebs-snapshot"
-    git_commit           = "d68d2897add9bc2203a5ed0632a5cdd8ff8cefb0"
+    git_commit           = "42b66f3fbe07025dce967a1d19ae705168fd1140"
     git_file             = "terraform/aws/ec2.tf"
-    git_last_modified_at = "2020-06-16 14:46:24"
-    git_last_modified_by = "nimrodkor@gmail.com"
-    git_modifiers        = "nimrodkor"
+    git_last_modified_at = "2021-12-22 00:06:57"
+    git_last_modified_by = "91766267+palogitjl@users.noreply.github.com"
+    git_modifiers        = "91766267+palogitjl/nimrodkor"
     git_org              = "palogitjl"
     git_repo             = "terragoat"
     yor_trace            = "5b7df4d5-a191-4369-aca3-b2138d439a18"
