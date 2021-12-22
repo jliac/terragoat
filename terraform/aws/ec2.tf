@@ -19,9 +19,9 @@ echo "<h1>Deployed via Terraform</h1>" | sudo tee /var/www/html/index.html
 EOF
   tags = {
     Name                 = "${local.resource_prefix.value}-ec2"
-    git_commit           = "42b66f3fbe07025dce967a1d19ae705168fd1140"
+    git_commit           = "87861a1a9d9da274a6af370f1edc5b3a66d97a42"
     git_file             = "terraform/aws/ec2.tf"
-    git_last_modified_at = "2021-12-22 00:06:57"
+    git_last_modified_at = "2021-12-22 00:38:10"
     git_last_modified_by = "91766267+palogitjl@users.noreply.github.com"
     git_modifiers        = "91766267+palogitjl/nimrodkor"
     git_org              = "palogitjl"
