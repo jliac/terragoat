@@ -1,5 +1,5 @@
 resource "aws_instance" "web_host" {
-  # ec2 have plain text secrets in user data by JLL
+  # ec2 have plain text secrets in user data by JLLOOOOOOOO
   ami           = "${var.ami}"
   instance_type = "t2.nano"
 
