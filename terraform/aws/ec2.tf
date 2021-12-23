@@ -28,6 +28,9 @@ EOF
     git_repo             = "terragoat"
     yor_trace            = "cff9836a-83cb-4449-80fb-708d70c3d82f"
   }
+  *_block_device {
+    encrypted = true
+  }
 }
 
 resource "aws_ebs_volume" "web_host_storage" {
