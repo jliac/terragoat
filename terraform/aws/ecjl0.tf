@@ -280,6 +280,9 @@ resource "aws_s3_bucket" "flowbucket" {
       }
     }
   }
+  versioning {
+    enabled = true
+  }
 }
 
 output "ec2_public_dns" {
