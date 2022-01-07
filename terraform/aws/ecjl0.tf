@@ -273,6 +273,13 @@ resource "aws_s3_bucket" "flowbucket" {
     git_repo             = "terragoat"
     yor_trace            = "b2b673c8-31f9-46cf-a8f5-2be454893f3b"
   }
+  server_side_encryption_configuration {
+    rule {
+      apply_server_side_encryption_by_default {
+        sse_algorithm = "aws:kms"
+      }
+    }
+  }
 }
 
 output "ec2_public_dns" {
