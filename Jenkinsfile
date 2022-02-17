@@ -10,7 +10,8 @@ pipeline {
             steps {
                 checkout([$class: 'GitSCM', branches: [[name: 'master']], userRemoteConfigs: [[url: 'https://github.com/palogitjl/terragoat.git']]])
                 script { 
-                    sh "export PRISMA_API_URL=https://api0.prismacloud.io"
+                    sh "export PRISMA_API_URL=https://api.prismacloud.io"
+                    sh "LOG_LEVEL=DEBUG" 
                     sh "pipenv install"
                     sh "pipenv run pip install bridgecrew"
                     sh "pipenv run bridgecrew --directory . --bc-api-key 877c6c92-7d04-45a8-ab7c-a7a0afecec58::FGKv6lGRdGvjOXJQePEHnxV0gs8= --repo-id jlohoue_paloaltonetworks_com/terragoat"
