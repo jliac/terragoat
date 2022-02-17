@@ -13,7 +13,7 @@ pipeline {
                     sh "export PRISMA_API_URL=https://api.prismacloud.io"
                     sh "pipenv install"
                     sh "pipenv run pip install bridgecrew"
-                    sh "pipenv run bridgecrew --directory . --bc-api-key 877c6c92-7d04-45a8-ab7c-a7a0afecec58::FGKv6lGRdGvjOXJQePEHnxV0gs8= --repo-id jlohoue_paloaltonetworks_com/terragoat"
+                    sh "pipenv run bridgecrew --directory . --bc-api-key "877c6c92-7d04-45a8-ab7c-a7a0afecec58::FGKv6lGRdGvjOXJQePEHnxV0gs8=" --repo-id jlohoue_paloaltonetworks_com/terragoat"
                 }
             }
         }
