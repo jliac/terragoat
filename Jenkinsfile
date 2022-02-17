@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('test') {
             steps {
-                checkout([$class: 'GitSCM', branches: [[name: 'master']], userRemoteConfigs: [[url: 'http://gogs-master-jlohoue.jlohoue.demo.twistlock.com/jlohoue_paloaltonetworks_com/Terracnfgoat.git']]])
+                checkout([$class: 'GitSCM', branches: [[name: 'master']], userRemoteConfigs: [[url: 'https://github.com/palogitjl/terragoat.git']]])
                 script { 
                     sh "export PRISMA_API_URL=https://api.prismacloud.io"
                     sh "pipenv install"
