@@ -20,6 +20,5 @@ pipeline {
     }
     options {
         preserveStashes()
-        timestamps()
     }
 }
