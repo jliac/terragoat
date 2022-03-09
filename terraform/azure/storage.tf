@@ -9,11 +9,11 @@ resource "azurerm_managed_disk" "example" {
     enabled = false
   }
   tags = {
-    git_commit           = "898d5beaec7ffdef6df0d7abecff407362e2a74e"
+    git_commit           = "a626fac37f1f20f67612a0e21b1e6be3fb2cf10a"
     git_file             = "terraform/azure/storage.tf"
-    git_last_modified_at = "2020-06-17 12:59:55"
-    git_last_modified_by = "nimrodkor@gmail.com"
-    git_modifiers        = "nimrodkor"
+    git_last_modified_at = "2022-03-09 17:53:23"
+    git_last_modified_by = "91766267+palogitjl@users.noreply.github.com"
+    git_modifiers        = "91766267+palogitjl/nimrodkor"
     git_org              = "palogitjl"
     git_repo             = "terragoat"
     yor_trace            = "414b46d1-e217-4c9c-a3e1-c41429e81a99"
