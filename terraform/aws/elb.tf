@@ -22,7 +22,7 @@ resource "aws_elb" "weblb" {
   instances                   = [aws_instance.web_host.id]
   cross_zone_load_balancing   = true
   idle_timeout                = 400
-  connection_draining         = true
+  connection_draining         = false
   connection_draining_timeout = 400
 
   tags = {
