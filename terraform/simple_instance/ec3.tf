@@ -37,7 +37,7 @@ resource "aws_instance" "web_server_instance" {
     git_last_modified_at = "2021-12-04 00:51:46"
     git_last_modified_by = "91766267+palogitjl@users.noreply.github.com"
     git_modifiers        = "91766267+palogitjl"
-    git_org              = "palogitjl"
+    git_org              = "palogitjl02"
     git_repo             = "terragoat"
     yor_trace            = "96f375f1-2ee0-428f-bf75-bbb19af78127"
   }
