@@ -29,6 +29,7 @@ resource "aws_instance" "web_server_instance" {
   ami             = data.aws_ami.ubuntu.id
   instance_type   = "t2.micro"
   security_groups = ["${aws_security_group.ssh_traffic.name}"]
+  vpc_id = "vpc-082ff8861a4f86af0"
   tags = {
     Name                 = "bc_workshop_ec2"
     git_file             = "terraform/simple_instance/ec3.tf"
