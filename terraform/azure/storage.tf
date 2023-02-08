@@ -4,16 +4,16 @@ resource "azurerm_managed_disk" "example" {
   resource_group_name  = azurerm_resource_group.example.name
   storage_account_type = "Standard_LRS"
   create_option        = "Empty"
-  disk_size_gb         = 1
+  disk_size_gb         = 2
   encryption_settings {
     enabled = false
   }
   tags = {
-    git_commit           = "898d5beaec7ffdef6df0d7abecff407362e2a74e"
+    git_commit           = "18a08757f1128c24df85ec849c70511ad57d6dc4"
     git_file             = "terraform/azure/storage.tf"
-    git_last_modified_at = "2020-06-17 12:59:55"
-    git_last_modified_by = "nimrodkor@gmail.com"
-    git_modifiers        = "nimrodkor"
+    git_last_modified_at = "2022-03-09 17:46:04"
+    git_last_modified_by = "91766267+palogitjl@users.noreply.github.com"
+    git_modifiers        = "91766267+palogitjl/nimrodkor"
     git_org              = "palogitjl"
     git_repo             = "terragoat"
     yor_trace            = "414b46d1-e217-4c9c-a3e1-c41429e81a99"
