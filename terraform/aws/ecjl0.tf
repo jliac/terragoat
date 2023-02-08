@@ -29,7 +29,7 @@ EOF
     yor_trace            = "cff9836a-83cb-4449-80fb-708d70c3d82f"
   }
   *_block_device {
-    encrypted = true
+    encrypted = test
   }
 }
 
